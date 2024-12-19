@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Biodata Saya</h1>
+
+        <div class="bio-info">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="details">
+                <p><strong>Nama:</strong> <span id="nama">John Doe</span></p>
+                <p><strong>Usia:</strong> <span id="usia">25</span></p>
+                <p><strong>Alamat:</strong> <span id="alamat">Jl. Raya No. 123, Jakarta</span></p>
+                <p><strong>Hobi:</strong> <span id="hobi">Membaca Buku, Traveling</span></p>
+            </div>
+        </div>
+
+        <button id="changeBioBtn">Ubah Biodata</button>
+
+        <div id="changeBioForm" class="hidden">
+            <h2>Ubah Biodata</h2>
+            <label for="newName">Nama:</label>
+            <input type="text" id="newName">
+            <label for="newAge">Usia:</label>
+            <input type="number" id="newAge">
+            <label for="newAddress">Alamat:</label>
+            <input type="text" id="newAddress">
+            <label for="newHobby">Hobi:</label>
+            <input type="text" id="newHobby">
+            <button id="saveBtn">Simpan</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
